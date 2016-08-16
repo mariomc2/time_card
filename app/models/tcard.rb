@@ -1,0 +1,2 @@
+class Tcard < ApplicationRecord
+end

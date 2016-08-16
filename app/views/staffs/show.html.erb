@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Contractee:</strong>
+  <%= @staff.contractee_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @staff.name %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @staff.surname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @staff.email %>
+</p>
+
+<p>
+  <strong>Pass active:</strong>
+  <%= @staff.pass_active %>
+</p>
+
+<p>
+  <strong>Acc active:</strong>
+  <%= @staff.acc_active %>
+</p>
+
+<p>
+  <strong>Last in:</strong>
+  <%= @staff.last_in %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @staff.password_digest %>
+</p>
+
+<%= link_to 'Edit', edit_staff_path(@staff) %> |
+<%= link_to 'Back', staffs_path %>

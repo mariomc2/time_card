@@ -1,0 +1,1 @@
+json.partial! "tcards/tcard", tcard: @tcard

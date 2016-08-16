@@ -1,0 +1,62 @@
+<%= form_for(tcard) do |f| %>
+  <% if tcard.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(tcard.errors.count, "error") %> prohibited this tcard from being saved:</h2>
+
+      <ul>
+      <% tcard.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :contractor_id %>
+    <%= f.number_field :contractor_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :contractee_id %>
+    <%= f.number_field :contractee_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :recruiter_id %>
+    <%= f.number_field :recruiter_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :time_in %>
+    <%= f.datetime_select :time_in %>
+  </div>
+
+  <div class="field">
+    <%= f.label :time_out %>
+    <%= f.datetime_select :time_out %>
+  </div>
+
+  <div class="field">
+    <%= f.label :supervisor_id %>
+    <%= f.number_field :supervisor_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :supervisor_status %>
+    <%= f.text_field :supervisor_status %>
+  </div>
+
+  <div class="field">
+    <%= f.label :manager_id %>
+    <%= f.number_field :manager_id %>
+  </div>
+
+  <div class="field">
+    <%= f.label :manager_status %>
+    <%= f.text_field :manager_status %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

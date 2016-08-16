@@ -1,0 +1,1 @@
+json.array! @tcards, partial: 'tcards/tcard', as: :tcard

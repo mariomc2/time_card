@@ -1,0 +1,2 @@
+json.extract! tcard, :id, :contractor_id, :contractee_id, :recruiter_id, :time_in, :time_out, :supervisor_id, :supervisor_status, :manager_id, :manager_status, :created_at, :updated_at
+json.url tcard_url(tcard, format: :json)

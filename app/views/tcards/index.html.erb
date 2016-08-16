@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tcards</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Contractor</th>
+      <th>Contractee</th>
+      <th>Recruiter</th>
+      <th>Time in</th>
+      <th>Time out</th>
+      <th>Supervisor</th>
+      <th>Supervisor status</th>
+      <th>Manager</th>
+      <th>Manager status</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tcards.each do |tcard| %>
+      <tr>
+        <td><%= tcard.contractor_id %></td>
+        <td><%= tcard.contractee_id %></td>
+        <td><%= tcard.recruiter_id %></td>
+        <td><%= tcard.time_in %></td>
+        <td><%= tcard.time_out %></td>
+        <td><%= tcard.supervisor_id %></td>
+        <td><%= tcard.supervisor_status %></td>
+        <td><%= tcard.manager_id %></td>
+        <td><%= tcard.manager_status %></td>
+        <td><%= link_to 'Show', tcard %></td>
+        <td><%= link_to 'Edit', edit_tcard_path(tcard) %></td>
+        <td><%= link_to 'Destroy', tcard, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tcard', new_tcard_path %>

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @agency.name %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @agency.email %>
+</p>
+
+<p>
+  <strong>Pass active:</strong>
+  <%= @agency.pass_active %>
+</p>
+
+<p>
+  <strong>Acc active:</strong>
+  <%= @agency.acc_active %>
+</p>
+
+<p>
+  <strong>Last in:</strong>
+  <%= @agency.last_in %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @agency.password_digest %>
+</p>
+
+<%= link_to 'Edit', edit_agency_path(@agency) %> |
+<%= link_to 'Back', agencies_path %>

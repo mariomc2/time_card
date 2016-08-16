@@ -1,0 +1,1 @@
+json.partial! "contractees/contractee", contractee: @contractee

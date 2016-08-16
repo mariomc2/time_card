@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Contractor:</strong>
+  <%= @tcard.contractor_id %>
+</p>
+
+<p>
+  <strong>Contractee:</strong>
+  <%= @tcard.contractee_id %>
+</p>
+
+<p>
+  <strong>Recruiter:</strong>
+  <%= @tcard.recruiter_id %>
+</p>
+
+<p>
+  <strong>Time in:</strong>
+  <%= @tcard.time_in %>
+</p>
+
+<p>
+  <strong>Time out:</strong>
+  <%= @tcard.time_out %>
+</p>
+
+<p>
+  <strong>Supervisor:</strong>
+  <%= @tcard.supervisor_id %>
+</p>
+
+<p>
+  <strong>Supervisor status:</strong>
+  <%= @tcard.supervisor_status %>
+</p>
+
+<p>
+  <strong>Manager:</strong>
+  <%= @tcard.manager_id %>
+</p>
+
+<p>
+  <strong>Manager status:</strong>
+  <%= @tcard.manager_status %>
+</p>
+
+<%= link_to 'Edit', edit_tcard_path(@tcard) %> |
+<%= link_to 'Back', tcards_path %>

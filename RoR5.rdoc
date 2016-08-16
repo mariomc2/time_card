@@ -1,0 +1,31 @@
+UPDATE RUBY
+
+$ brew update
+$ brew upgrade ruby-build
+$ rbenv install 2.3.1
+$ rbenv rehash
+$ rbenv global 2.3.1
+$ sudo rbenv uninstall 2.2.3
+$ rbenv rehash
+$ rbenv versions
+$ ruby -v
+	ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]
+
+
+UPDATE GEMS
+
+$ gem -v
+$ gem update --system
+$ gem -v
+$ gem list
+
+
+INSTALL RAILS
+
+$ gem install bundler
+$ rbenv rehash
+$ bundle -v
+
+$ gem install rails --no-ri --no-rdoc --version 5.0.0.1
+$ rbenv rehash
+$ rails -v

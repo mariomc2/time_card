@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contractee_id: 1
+  name: MyString
+  surname: MyString
+  email: MyString
+  pass_active: false
+  acc_active: false
+  last_in: 2016-08-15 23:34:26
+  password_digest: MyString
+
+two:
+  contractee_id: 1
+  name: MyString
+  surname: MyString
+  email: MyString
+  pass_active: false
+  acc_active: false
+  last_in: 2016-08-15 23:34:26
+  password_digest: MyString

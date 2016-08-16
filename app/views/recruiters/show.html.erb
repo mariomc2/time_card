@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Agency:</strong>
+  <%= @recruiter.agency_id %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @recruiter.name %>
+</p>
+
+<p>
+  <strong>Surname:</strong>
+  <%= @recruiter.surname %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @recruiter.email %>
+</p>
+
+<p>
+  <strong>Pass active:</strong>
+  <%= @recruiter.pass_active %>
+</p>
+
+<p>
+  <strong>Acc active:</strong>
+  <%= @recruiter.acc_active %>
+</p>
+
+<p>
+  <strong>Last in:</strong>
+  <%= @recruiter.last_in %>
+</p>
+
+<p>
+  <strong>Password digest:</strong>
+  <%= @recruiter.password_digest %>
+</p>
+
+<%= link_to 'Edit', edit_recruiter_path(@recruiter) %> |
+<%= link_to 'Back', recruiters_path %>

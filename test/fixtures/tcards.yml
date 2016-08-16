@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  contractor_id: 1
+  contractee_id: 1
+  recruiter_id: 1
+  time_in: 2016-08-15 23:36:55
+  time_out: 2016-08-15 23:36:55
+  supervisor_id: 1
+  supervisor_status: MyString
+  manager_id: 1
+  manager_status: MyString
+
+two:
+  contractor_id: 1
+  contractee_id: 1
+  recruiter_id: 1
+  time_in: 2016-08-15 23:36:55
+  time_out: 2016-08-15 23:36:55
+  supervisor_id: 1
+  supervisor_status: MyString
+  manager_id: 1
+  manager_status: MyString

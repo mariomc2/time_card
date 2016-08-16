@@ -1,0 +1,1 @@
+json.array! @contractees, partial: 'contractees/contractee', as: :contractee
